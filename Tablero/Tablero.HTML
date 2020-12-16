@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero</title>
+</head>
+
+<body>
+    <script>
+        //Tu código aquí
+
+        let numero; 
+        numero = prompt("Que tamaño tendrá el tablero?");
+        console.log("El tablero será de "+ numero + "x" + numero);
+      
+        let resultadox = "";
+        
+        let resultadoy = "";
+
+
+        for (let i = 0;i < numero;i=i+1)
+        {
+            if(i%2 == 0)
+            {
+                for (let j = 0;j<numero;j=j+1)
+                {
+                    if(j%2 == 0)
+                    {
+                        resultadox += "X";
+                    }
+                    else
+                    {
+                        resultadox += "O";
+                    }
+
+                } console.log(resultadox);
+                resultadox = "";
+            }
+            else
+            {
+                for (let j = 0;j<numero;j=j+1)
+                {
+                    if(j%2 == 0)
+                    {
+                        resultadoy += "O";
+                    }
+                    else
+                    {
+                        resultadoy += "X";
+                    }
+                }
+                console.log(resultadoy);
+                resultadoy = "";
+            }
+        }       
+
+    
+    </script>
+</body>
+
+</html>
